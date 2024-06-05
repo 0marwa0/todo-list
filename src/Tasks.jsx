@@ -6,7 +6,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { FiEdit } from "react-icons/fi";
 import { FaRegTrashCan } from "react-icons/fa6";
 
-function Tasks({ tasks, deleteItem, onEdit }) {
+function Tasks({ tasks, deleteItem, onEdit, setIsOpen }) {
   return (
     <>
       {tasks.length == 0 ? (

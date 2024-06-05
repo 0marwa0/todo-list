@@ -70,7 +70,12 @@ function App() {
         ) : null}
       </Container>
 
-      <Tasks tasks={tasks} deleteItem={deleteItem} onEdit={onEdit} />
+      <Tasks
+        tasks={tasks}
+        deleteItem={deleteItem}
+        onEdit={onEdit}
+        setIsOpen={setIsOpen}
+      />
 
       <ItemModal
         setIsOpen={setIsOpen}
